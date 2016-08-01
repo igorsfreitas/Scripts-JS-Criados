@@ -1,0 +1,151 @@
+/*button text - all levels*/
+#altermenu .menuButtonSecond td, .menuButton td, .menuButtondown td, .menuButtonover td {
+	cursor:pointer;
+}
+
+/*menu text - all levels*/
+#altermenu .defaultMenuText{
+	font:15px Arial,sans-serif;
+	padding-left:3px;
+	padding-right:3px;
+	padding-top:2px;
+	color : #163662;
+	font-weight: normal;
+}
+
+/*menu caption if any*/    
+#altermenu .menuName{
+	color : #163662;
+	font-weight: bold;
+	font : 11px Arial,sans-serif;
+	letter-spacing : 3px;
+	padding-left : 10px;
+	padding-right : 10px;   
+}
+
+.areaTrabalho{
+	color : #163662;
+	font-weight: bold;
+	font : 11px Arial,sans-serif;
+	letter-spacing : 3px;
+	padding-left : 10px;
+	padding-right : 10px;
+}
+
+/*========= BUTTONS ======================*/
+
+/*plain button state - top level*/
+#altermenu .menuButton {
+		color : #c0c0c0;
+		font-weight: bold;
+}
+
+/*down button state - top level*/
+#altermenu .menuButtondown {
+	color: #c0c0c0;
+	cursor : bold;
+}
+
+/*mouse over button state - top level*/
+#altermenu .menuButtonover {
+	color: #c0c0c0;
+	font-weight: bold;
+	cursor : pointer;
+}
+
+/*plain button state - other levels*/
+#altermenu .menuButtonSecond {
+	border : solid 0px #668abc;
+	font:12px Arial,sans-serif;
+}
+
+/*mouse over button and down button states - other levels*/
+#altermenu .menuButtonSeconddown {
+	border : solid 0px #668abc;
+	font:12px Arial,sans-serif;
+	color:white;
+	cursor : pointer;
+}
+
+
+/*text of mouse over button - other levels*/
+/*HOVER*/
+#altermenu .menuButtonSeconddown td {
+	 color: white;
+	 background-color: #7f7f7f;
+	 cursor:pointer;
+	 border:0px solid;
+}
+
+
+/*============ PANELS and DEVIDERS ===========================================*/
+
+/*manu panel - top level*/
+#altermenu .menuTable{
+
+	margin : 0px;
+	-moz-user-select : none;
+	padding : 0px;
+	
+	
+	
+}
+
+/*menu panel - other levels*/
+#altermenu .secondMenuTable{
+	
+	border: thin solid #668abc;
+	background-color: #e1e0e0;
+	margin : 0px;
+	-moz-user-select : none;
+	padding : 0 1 0 2;
+}
+
+/*devider - horizontal*/
+/* #altermenu .menuDividerY {
+	background-color : #c9c6c6;
+	border-bottom : solid #F2F6F7 1px;
+	border-top : solid #B5CED9 1px;
+	height : 0px;
+	overflow : hidden;
+	width : 100%;
+} */
+
+ 
+/*================== DRAG HANDLERS ==================*/
+
+/*drag handler for menu - horizontal*/
+#altermenu .menuhandle {
+	border-bottom : solid #d3f3fe 1px;
+	border-left : solid #FFFFFF 1px;
+	border-right : solid #668abc 1px;
+	border-top : solid #668abc 1px; 
+	cursor : pointer;
+	height : 100%;
+	overflow : hidden;
+	width : 3px;
+}
+
+
+/*============ ICONS and SCROLLERS ====================*/
+
+/*disabled icon - all levels*/
+#altermenu .iconGray {
+	cursor: default; 
+	border:solid 1px #668abc;
+}
+
+/*enabled scroller*/
+#altermenu .menuscrollerenabled{
+	background-color:red;
+	cursor: pointer;	
+	text-align:center;
+}
+
+/*disabled scroller*/
+#altermenu .menuscrollerdisabled{
+	background-color: red;
+	cursor: pointer;
+	visibility:hidden;
+	text-align:center;
+}

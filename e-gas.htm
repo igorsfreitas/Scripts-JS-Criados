@@ -1,0 +1,516 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0062)http://localhost:8082/netGasV2/relatorioRotas.do?metodo=inicia -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<script>
+
+
+var UrlNetdoc = "/netGasV2/";
+
+
+function abreChat(){
+	window.open("/netGasV2/jsp/informativo/chatOnline.jsp?" + (Math.random() * 1000000),null,"height=650,width=626,status=yes,toolbar=no,menubar=no,location=no,scrollbars=yes");
+}
+
+function abreMapa(){
+	window.location.href = ("/netGasV2/jsp/mapa/mapa.jsp");
+}
+
+  
+</script>
+<title>e-gas</title>
+
+	<!-- Condicional para verificar se o dispositivo que está acessando é um tablet ou pc 
+	<meta  name = "viewport" content = "initial-scale = 1.5, maximum-scale = 1.0, user-scalable = no">
+	-->
+<script type="text/javascript" charset="UTF-8" src="./e-gas_files/common.js"></script><script type="text/javascript" charset="UTF-8" src="./e-gas_files/util.js"></script><script type="text/javascript" charset="UTF-8" src="./e-gas_files/stats.js"></script><script type="text/javascript" charset="UTF-8" src="./e-gas_files/AuthenticationService.Authenticate"></script></head>
+<body style="background-color: #F5F5F5" onload="start();">
+
+<!-- grid core -->
+<script language="JavaScript" src="./e-gas_files/dhtmlxcommon.js"></script>
+<script language="JavaScript" src="./e-gas_files/dhtmlxgrid.js"></script>
+<script language="JavaScript" src="./e-gas_files/dhtmlxgridcell.js"></script>
+<script language="JavaScript" src="./e-gas_files/dhtmlxgrid_drag.js"></script>
+<script language="JavaScript" src="./e-gas_files/dhtmlxcolorpicker.js"></script>
+<script type="text/javascript" src="./e-gas_files/dhtmlxcommonCombo.js"></script>	
+<script type="text/javascript" src="./e-gas_files/dhtmlxcombo.js"></script>
+<script src="./e-gas_files/dhtmlxcalendar.js"></script>
+<link rel="stylesheet" href="./e-gas_files/alertify.core.css">
+<link rel="stylesheet" href="./e-gas_files/alertify.default.css" id="toggleCSS">
+<link rel="stylesheet" type="text/css" href="./e-gas_files/dhtmlxcalendar.css">
+<link rel="stylesheet" type="text/css" href="./e-gas_files/dhtmlxcalendar_dhx_skyblue.css">
+<link rel="STYLESHEET" type="text/css" href="./e-gas_files/dhtmlxcolorpicker.css">
+
+<!-- gridVV/event -->
+<script language="JavaScript" src="./e-gas_files/gridToJsonSms.js" type="text/javascript"></script>
+<script language="JavaScript" src="./e-gas_files/gridVV.js"></script>
+<script src="./e-gas_files/gridToJson.js" type="text/javascript"></script>
+<script language="JavaScript" src="./e-gas_files/event.js"></script>
+
+<!-- json -->
+<script src="./e-gas_files/json2.js" type="text/javascript"></script>
+
+<!-- menu -->
+<script language="JavaScript" src="./e-gas_files/dhtmlXProtobar.js"></script>
+<script language="JavaScript" src="./e-gas_files/dhtmlXMenuBar.js"></script>
+
+<!-- jquery -->
+<script language="JavaScript" src="./e-gas_files/alertify.min.js"></script>
+<script type="text/javascript" src="./e-gas_files/jquery-1.11.0.min.js"></script>
+<!-- <script type="text/javascript" src="/VVjs/js/jquery.mask.js"/></script> -->
+<script type="text/javascript" src="./e-gas_files/jquery.maskedinput.min.js"></script>
+<!-- <script type="text/javascript" src="/VVjs/js/jquery.maskedinput-1.3.js"/></script> -->
+
+<!-- popup -->
+<script type="text/javascript" src="./e-gas_files/jquery-dom.js"></script>
+<script type="text/javascript" src="./e-gas_files/tipos.js"></script>
+<script type="text/javascript" src="./e-gas_files/popup.js"></script>
+
+<!-- jsplumb -->
+<script src="./e-gas_files/dw_event.js" type="text/javascript"></script>
+<script src="./e-gas_files/dw_viewport.js" type="text/javascript"></script>
+
+<!-- tolltip -->
+<script src="./e-gas_files/dw_tooltip.js" type="text/javascript"></script><div id="tipDiv"></div>
+
+<!-- css -->
+<link rel="STYLESHEET" type="text/css" href="./e-gas_files/estilos.css">	
+<link rel="STYLESHEET" type="text/css" href="./e-gas_files/dhtmlXGrid.css">	
+<link rel="STYLESHEET" type="text/css" href="./e-gas_files/dhtmlxcombo.css">
+<link rel="STYLESHEET" type="text/css" href="./e-gas_files/dhtmlXMenu_alter.css">
+
+<script>window.dhx_globalImgPath="/VVjs/imgs/";</script> 
+
+
+	
+
+		<table border="0px" cellpadding="0" cellspacing="0" height="100%" align="center" style="padding-top: 1px;border-color: green;" width="775px">
+			<tbody><tr>
+				<td valign="top">
+					<table border="0" cellpadding="0" cellspacing="0" width="775px" align="center" style="margin-left: 2px">
+ 						<tbody><tr>
+ 							<td valign="top">
+ 								<table border="0" cellpadding="0" cellspacing="0" style="background-image: url(&#39;/netGasV2/novas_imagens/topo_fundo.png&#39;);background-repeat: no-repeat; margin-bottom:-13px; margin-left:2px;" width="790px" height="70px">
+			    					<tbody><tr>
+										<td style="padding: 27px">
+											<a href="http://localhost:8082/netGasV2/jsp/indexNormal.jsp">
+												<img src="./e-gas_files/netgas_topo.png" style="height: 47px;">
+											</a>
+ 										</td>
+ 										<td style="padding: 27px" align="right">
+	 										
+											
+												<img src="./e-gas_files/img_topo.png" style="height: 47px;">
+											
+ 										</td>
+ 									</tr>
+								</tbody></table>
+		
+					 		<table width="785px" bgcolor="#e1e0e0" style="font-family: calibi;color: #1c4072;margin-left: 2px;font-size: 15px;" cellpadding="0" cellspacing="0" height="29px" border="0">
+						 		<tbody><tr>
+						 			<td bgcolor="#e1e0e0" align="left" style="font-family: calibri; padding-left: 30px;"></td>
+							 			<td bgcolor="#e1e0e0" align="right" style="font-family: calibri; padding-right: 30px">Usuário: <a href="http://localhost:8082/netGasV2/funcionarios.do?metodo=inicioDados" style="font-family: calibri; ">
+							  				70240701453 - GRIMALDE JOSE CARVALHO DE OLIVEIRA </a>
+										</td>
+								</tr>
+							</tbody></table> 
+							<table width="785px" bgcolor="#e1e0e0" style="font-family: calibi;color: white;margin-top: 5px; margin-left: 2px;" cellpadding="0" cellspacing="0" border="0">
+									  <tbody><tr>
+										  
+										  <td style="padding-left: 27px;">
+										  	<img src="./e-gas_files/localizacao.png" onclick="abreMapa()" width="25px" alt="Mapa CRAS" title="Mapa CRAS" style="padding-top: 4px; cursor:pointer">
+										  </td>
+						                  <td align="center">
+						                      <div id="altermenu" style="margin-right: 15px; margin-top: 5px; margin-bottom: 5px;color: white; ">
+						                  <table cellpadding="0" cellspacing="0" class="menuTable" width="100%" height="1" unselectable="on" style="z-index: 30;"><tbody><tr><td width="3px" style="display:none"><div class="menuHandle">&nbsp;</div></td><td class="menuName" width="100%"></td><td align="center" nowrap="" id="menuItem_idInicio" class="menuButton" style="margin-bottom: 20px;"><table align="left" cellpadding="0" cellspacing="0" border="0" width="100%" height="100%"><tbody><tr><td width="20px" style=" "><img src="./e-gas_files/blank.gif" border="0" width="18px" height="18px"></td><td width="100%" align="left" style="  padding-left:2px; overflow:hidden;"><table width="100%" height="100%" cellpadding="0" cellspacing="0"><tbody><tr><td title="Informativos" class="defaultMenuText" nowrap="nowrap">Informativos</td><td width="12px"><img style="display:none"></td></tr></tbody></table></td></tr></tbody></table></td><td align="center" nowrap="" id="menuItem_main_coleta" class="menuButton" style="margin-bottom: 20px;"><table align="left" cellpadding="0" cellspacing="0" border="0" width="100%" height="100%"><tbody><tr><td width="20px" style=" "><img src="./e-gas_files/blank.gif" border="0" width="18px" height="18px"></td><td width="100%" align="left" style="  padding-left:2px; overflow:hidden;"><table width="100%" height="100%" cellpadding="0" cellspacing="0"><tbody><tr><td title="Capturar Assinatura" class="defaultMenuText" nowrap="nowrap">Capturar Assinatura</td><td width="12px"><img style="display:none"></td></tr></tbody></table></td></tr></tbody></table></td><td align="center" nowrap="" id="menuItem_main_coleta" class="menuButton" style="margin-bottom: 20px;"><table align="left" cellpadding="0" cellspacing="0" border="0" width="100%" height="100%"><tbody><tr><td width="20px" style=" "><img src="./e-gas_files/blank.gif" border="0" width="18px" height="18px"></td><td width="100%" align="left" style="  padding-left:2px; overflow:hidden;"><table width="100%" height="100%" cellpadding="0" cellspacing="0"><tbody><tr><td title="Importações" class="defaultMenuText" nowrap="nowrap">Importações</td><td width="12px"><img style="display:none"></td></tr></tbody></table></td></tr></tbody></table></td><td align="center" nowrap="" id="menuItem_main_coleta" class="menuButton" style="margin-bottom: 20px;"><table align="left" cellpadding="0" cellspacing="0" border="0" width="100%" height="100%"><tbody><tr><td width="20px" style=" "><img src="./e-gas_files/blank.gif" border="0" width="18px" height="18px"></td><td width="100%" align="left" style="  padding-left:2px; overflow:hidden;"><table width="100%" height="100%" cellpadding="0" cellspacing="0"><tbody><tr><td title="Administrador" class="defaultMenuText" nowrap="nowrap">Administrador</td><td width="12px"><img style="display:none"></td></tr></tbody></table></td></tr></tbody></table></td><td align="center" nowrap="" id="menuItem_manter_coletaAdm" class="menuButton" style="margin-bottom: 20px;"><table align="left" cellpadding="0" cellspacing="0" border="0" width="100%" height="100%"><tbody><tr><td width="20px" style=" "><img src="./e-gas_files/blank.gif" border="0" width="18px" height="18px"></td><td width="100%" align="left" style="  padding-left:2px; overflow:hidden;"><table width="100%" height="100%" cellpadding="0" cellspacing="0"><tbody><tr><td title="Sair" class="defaultMenuText" nowrap="nowrap">Sair</td><td width="12px"><img style="display:none"></td></tr></tbody></table></td></tr></tbody></table></td><td></td><td align="right" width="100%" class="menuName" style="display: none;"></td><td>&nbsp;</td></tr></tbody></table><form style="display: none;"></form><table cellpadding="0" cellspacing="0" class="secondMenuTable" width="1" height="1" unselectable="on" style="display: none; z-index: 30; position: absolute;"><tbody><tr><td width="3px" style="display:none"><div class="menuHandle">&nbsp;</div></td><td class="menuName" style="display:none"></td><tr style="vertical-align: top;"><td align="center" nowrap="" id="menuItem_manter_coletaAdm" class="menuButtonSecond"><table align="left" cellpadding="0" cellspacing="0" border="0" width="100%" height="100%"><tbody><tr><td width="20px" style=" display:none;"><img src="./e-gas_files/blank.gif" border="0" width="18px" height="18px"></td><td width="100%" align="left" style="  overflow:hidden;"><table width="100%" height="100%" cellpadding="0" cellspacing="0"><tbody><tr><td title="Importar Domicilio" class="defaultMenuText" nowrap="nowrap">Importar Domicilio</td><td width="12px"><img style="display:none"></td></tr></tbody></table></td></tr></tbody></table></td></tr><tr style="vertical-align: top;"><td align="center" nowrap="" id="menuItem_manter_coletaAdm" class="menuButtonSecond"><table align="left" cellpadding="0" cellspacing="0" border="0" width="100%" height="100%"><tbody><tr><td width="20px" style=" display:none;"><img src="./e-gas_files/blank.gif" border="0" width="18px" height="18px"></td><td width="100%" align="left" style="  overflow:hidden;"><table width="100%" height="100%" cellpadding="0" cellspacing="0"><tbody><tr><td title="Importar Associado" class="defaultMenuText" nowrap="nowrap">Importar Associado</td><td width="12px"><img style="display:none"></td></tr></tbody></table></td></tr></tbody></table></td></tr><tr style="vertical-align: top;"><td align="center" nowrap="" id="menuItem_manter_coletaAdm" class="menuButtonSecond"><table align="left" cellpadding="0" cellspacing="0" border="0" width="100%" height="100%"><tbody><tr><td width="20px" style=" display:none;"><img src="./e-gas_files/blank.gif" border="0" width="18px" height="18px"></td><td width="100%" align="left" style="  overflow:hidden;"><table width="100%" height="100%" cellpadding="0" cellspacing="0"><tbody><tr><td title="Importar Bairro" class="defaultMenuText" nowrap="nowrap">Importar Bairro</td><td width="12px"><img style="display:none"></td></tr></tbody></table></td></tr></tbody></table></td></tr><tr style="vertical-align: top;"><td align="center" nowrap="" id="menuItem_manter_coletaAdm" class="menuButtonSecond"><table align="left" cellpadding="0" cellspacing="0" border="0" width="100%" height="100%"><tbody><tr><td width="20px" style=" display:none;"><img src="./e-gas_files/blank.gif" border="0" width="18px" height="18px"></td><td width="100%" align="left" style="  overflow:hidden;"><table width="100%" height="100%" cellpadding="0" cellspacing="0"><tbody><tr><td title="Importar Bolsa Familia" class="defaultMenuText" nowrap="nowrap">Importar Bolsa Familia</td><td width="12px"><img style="display:none"></td></tr></tbody></table></td></tr></tbody></table></td></tr><tr style="vertical-align: top;"><td align="center" nowrap="" id="menuItem_manter_coletaAdm" class="menuButtonSecond"><table align="left" cellpadding="0" cellspacing="0" border="0" width="100%" height="100%"><tbody><tr><td width="20px" style=" display:none;"><img src="./e-gas_files/blank.gif" border="0" width="18px" height="18px"></td><td width="100%" align="left" style="  overflow:hidden;"><table width="100%" height="100%" cellpadding="0" cellspacing="0"><tbody><tr><td title="Envios Bolsa Familia" class="defaultMenuText" nowrap="nowrap">Envios Bolsa Familia</td><td width="12px"><img style="display:none"></td></tr></tbody></table></td></tr></tbody></table></td></tr><tr style="vertical-align: top;"><td align="center" nowrap="" id="menuItem_manter_coletaAdm" class="menuButtonSecond"><table align="left" cellpadding="0" cellspacing="0" border="0" width="100%" height="100%"><tbody><tr><td width="20px" style=" display:none;"><img src="./e-gas_files/blank.gif" border="0" width="18px" height="18px"></td><td width="100%" align="left" style="  overflow:hidden;"><table width="100%" height="100%" cellpadding="0" cellspacing="0"><tbody><tr><td title="Importar Cad. Único PDF" class="defaultMenuText" nowrap="nowrap">Importar Cad. Único PDF</td><td width="12px"><img style="display:none"></td></tr></tbody></table></td></tr></tbody></table></td></tr><tr style="vertical-align: top;"><td align="center" nowrap="" id="menuItem_manter_coletaAdm" class="menuButtonSecond"><table align="left" cellpadding="0" cellspacing="0" border="0" width="100%" height="100%"><tbody><tr><td width="20px" style=" display:none;"><img src="./e-gas_files/blank.gif" border="0" width="18px" height="18px"></td><td width="100%" align="left" style="  overflow:hidden;"><table width="100%" height="100%" cellpadding="0" cellspacing="0"><tbody><tr><td title="Importar RI Bolsa Família e Cád. Único" class="defaultMenuText" nowrap="nowrap">Importar RI Bolsa Família e Cád. Único</td><td width="12px"><img style="display:none"></td></tr></tbody></table></td></tr></tbody></table></td></tr><tr style="vertical-align: top;"><td align="center" nowrap="" id="menuItem_manter_coletaAdm" class="menuButtonSecond"><table align="left" cellpadding="0" cellspacing="0" border="0" width="100%" height="100%"><tbody><tr><td width="20px" style=" display:none;"><img src="./e-gas_files/blank.gif" border="0" width="18px" height="18px"></td><td width="100%" align="left" style="  overflow:hidden;"><table width="100%" height="100%" cellpadding="0" cellspacing="0"><tbody><tr><td title="Importar Relatório de Programas e Ações MDS" class="defaultMenuText" nowrap="nowrap">Importar Relatório de Programas e Ações MDS</td><td width="12px"><img style="display:none"></td></tr></tbody></table></td></tr></tbody></table></td></tr><td></td><td align="right" width="100%" class="menuName" style="display: none;">&nbsp;</td><td style="display: none;">&nbsp;</td></tr></tbody></table><table cellpadding="0" cellspacing="0" class="secondMenuTable" width="1" height="1" unselectable="on" style="display: none; z-index: 30; position: absolute;"><tbody><tr><td width="3px" style="display:none"><div class="menuHandle">&nbsp;</div></td><td class="menuName" style="display:none"></td><tr style="vertical-align: top;"><td align="center" nowrap="" id="menuItem_idArea" class="menuButtonSecond"><table align="left" cellpadding="0" cellspacing="0" border="0" width="100%" height="100%"><tbody><tr><td width="20px" style=" display:none;"><img src="./e-gas_files/blank.gif" border="0" width="18px" height="18px"></td><td width="100%" align="left" style="  overflow:hidden;"><table width="100%" height="100%" cellpadding="0" cellspacing="0"><tbody><tr><td title="Mapa dos CRAS" class="defaultMenuText" nowrap="nowrap">Mapa dos CRAS</td><td width="12px"><img style="display:none"></td></tr></tbody></table></td></tr></tbody></table></td></tr><tr style="vertical-align: top;"><td align="center" nowrap="" id="menuItem_manter_coletaAdm" class="menuButtonSecond"><table align="left" cellpadding="0" cellspacing="0" border="0" width="100%" height="100%"><tbody><tr><td width="20px" style=" display:none;"><img src="./e-gas_files/blank.gif" border="0" width="18px" height="18px"></td><td width="100%" align="left" style="  overflow:hidden;"><table width="100%" height="100%" cellpadding="0" cellspacing="0"><tbody><tr><td title="Informativo" class="defaultMenuText" nowrap="nowrap">Informativo</td><td width="12px"><img style="display:none"></td></tr></tbody></table></td></tr></tbody></table></td></tr><tr style="vertical-align: top;"><td align="center" nowrap="" id="menuItem_manter_coletaAdm" class="menuButtonSecond"><table align="left" cellpadding="0" cellspacing="0" border="0" width="100%" height="100%"><tbody><tr><td width="20px" style=" display:none;"><img src="./e-gas_files/blank.gif" border="0" width="18px" height="18px"></td><td width="100%" align="left" style="  overflow:hidden;"><table width="100%" height="100%" cellpadding="0" cellspacing="0"><tbody><tr><td title="Publicações" class="defaultMenuText" nowrap="nowrap">Publicações</td><td width="12px"><img style="display:none"></td></tr></tbody></table></td></tr></tbody></table></td></tr><tr style="vertical-align: top;"><td align="center" nowrap="" id="menuItem_manter_coletaAdm" class="menuButtonSecond"><table align="left" cellpadding="0" cellspacing="0" border="0" width="100%" height="100%"><tbody><tr><td width="20px" style=" display:none;"><img src="./e-gas_files/blank.gif" border="0" width="18px" height="18px"></td><td width="100%" align="left" style="  overflow:hidden;"><table width="100%" height="100%" cellpadding="0" cellspacing="0"><tbody><tr><td title="Logs do Sistema" class="defaultMenuText" nowrap="nowrap">Logs do Sistema</td><td width="12px"><img style="display:none"></td></tr></tbody></table></td></tr></tbody></table></td></tr><tr style="vertical-align: top;"><td align="center" nowrap="" id="menuItem_manter_coletaAdm" class="menuButtonSecond"><table align="left" cellpadding="0" cellspacing="0" border="0" width="100%" height="100%"><tbody><tr><td width="20px" style=" display:none;"><img src="./e-gas_files/blank.gif" border="0" width="18px" height="18px"></td><td width="100%" align="left" style="  overflow:hidden;"><table width="100%" height="100%" cellpadding="0" cellspacing="0"><tbody><tr><td title="Logs do Motorista" class="defaultMenuText" nowrap="nowrap">Logs do Motorista</td><td width="12px"><img style="display:none"></td></tr></tbody></table></td></tr></tbody></table></td></tr><tr style="vertical-align: top;"><td align="center" nowrap="" id="menuItem_manter_coletaAdm" class="menuButtonSecond"><table align="left" cellpadding="0" cellspacing="0" border="0" width="100%" height="100%"><tbody><tr><td width="20px" style=" display:none;"><img src="./e-gas_files/blank.gif" border="0" width="18px" height="18px"></td><td width="100%" align="left" style="  overflow:hidden;"><table width="100%" height="100%" cellpadding="0" cellspacing="0"><tbody><tr><td title="Enviar Mensagem" class="defaultMenuText" nowrap="nowrap">Enviar Mensagem</td><td width="12px"><img style="display:none"></td></tr></tbody></table></td></tr></tbody></table></td></tr><tr style="vertical-align: top;"><td align="center" nowrap="" id="menuItem_manter_coletaAdm" class="menuButtonSecond"><table align="left" cellpadding="0" cellspacing="0" border="0" width="100%" height="100%"><tbody><tr><td width="20px" style=" display:none;"><img src="./e-gas_files/blank.gif" border="0" width="18px" height="18px"></td><td width="100%" align="left" style="  overflow:hidden;"><table width="100%" height="100%" cellpadding="0" cellspacing="0"><tbody><tr><td title="Função" class="defaultMenuText" nowrap="nowrap">Função</td><td width="12px"><img style="display:none"></td></tr></tbody></table></td></tr></tbody></table></td></tr><tr style="vertical-align: top;"><td align="center" nowrap="" id="menuItem_manter_coletaAdm" class="menuButtonSecond"><table align="left" cellpadding="0" cellspacing="0" border="0" width="100%" height="100%"><tbody><tr><td width="20px" style=" display:none;"><img src="./e-gas_files/blank.gif" border="0" width="18px" height="18px"></td><td width="100%" align="left" style="  overflow:hidden;"><table width="100%" height="100%" cellpadding="0" cellspacing="0"><tbody><tr><td title="Funcionários" class="defaultMenuText" nowrap="nowrap">Funcionários</td><td width="12px"><img style="display:none"></td></tr></tbody></table></td></tr></tbody></table></td></tr><tr style="vertical-align: top;"><td align="center" nowrap="" id="menuItem_manter_coletaAdm" class="menuButtonSecond"><table align="left" cellpadding="0" cellspacing="0" border="0" width="100%" height="100%"><tbody><tr><td width="20px" style=" display:none;"><img src="./e-gas_files/blank.gif" border="0" width="18px" height="18px"></td><td width="100%" align="left" style="  overflow:hidden;"><table width="100%" height="100%" cellpadding="0" cellspacing="0"><tbody><tr><td title="Unidades Institucionais" class="defaultMenuText" nowrap="nowrap">Unidades Institucionais</td><td width="12px"><img style="display:none"></td></tr></tbody></table></td></tr></tbody></table></td></tr><tr style="vertical-align: top;"><td align="center" nowrap="" id="menuItem_atividades_acompFamiliar" class="menuButtonSecond"><table align="left" cellpadding="0" cellspacing="0" border="0" width="100%" height="100%"><tbody><tr><td width="20px" style=" display:none;"><img src="./e-gas_files/blank.gif" border="0" width="18px" height="18px"></td><td width="100%" align="left" style="  overflow:hidden;"><table width="100%" height="100%" cellpadding="0" cellspacing="0"><tbody><tr><td title="Atividades Acompanhamento Familiar" class="defaultMenuText" nowrap="nowrap">Atividades Acompanhamento Familiar</td><td width="12px"><img style="display:none"></td></tr></tbody></table></td></tr></tbody></table></td></tr><tr style="vertical-align: top;"><td align="center" nowrap="" id="menuItem_1467814380865" class="menuButtonSecond"><table align="left" cellpadding="0" cellspacing="0" border="0" width="100%" height="100%"><tbody><tr><td width="20px" style=" display:none;"><img src="./e-gas_files/blank.gif" border="0" width="18px" height="18px"></td><td width="100%" align="left" style="  overflow:hidden;"><table width="100%" height="100%" cellpadding="0" cellspacing="0"><tbody><tr><td title="Saúde" class="defaultMenuText" nowrap="nowrap">Saúde</td><td width="12px"><img src="./e-gas_files/btn_rt1.gif"></td></tr></tbody></table></td></tr></tbody></table></td></tr><tr style="vertical-align: top;"><td align="center" nowrap="" id="menuItem_manter_coletaAdm" class="menuButtonSecond"><table align="left" cellpadding="0" cellspacing="0" border="0" width="100%" height="100%"><tbody><tr><td width="20px" style=" display:none;"><img src="./e-gas_files/blank.gif" border="0" width="18px" height="18px"></td><td width="100%" align="left" style="  overflow:hidden;"><table width="100%" height="100%" cellpadding="0" cellspacing="0"><tbody><tr><td title="Unidade de Saúde" class="defaultMenuText" nowrap="nowrap">Unidade de Saúde</td><td width="12px"><img style="display:none"></td></tr></tbody></table></td></tr></tbody></table></td></tr><tr style="vertical-align: top;"><td align="center" nowrap="" id="menuItem_manter_coletaAdm" class="menuButtonSecond"><table align="left" cellpadding="0" cellspacing="0" border="0" width="100%" height="100%"><tbody><tr><td width="20px" style=" display:none;"><img src="./e-gas_files/blank.gif" border="0" width="18px" height="18px"></td><td width="100%" align="left" style="  overflow:hidden;"><table width="100%" height="100%" cellpadding="0" cellspacing="0"><tbody><tr><td title="Unidade Referência" class="defaultMenuText" nowrap="nowrap">Unidade Referência</td><td width="12px"><img style="display:none"></td></tr></tbody></table></td></tr></tbody></table></td></tr><tr style="vertical-align: top;"><td align="center" nowrap="" id="menuItem_manter_coletaAdm" class="menuButtonSecond"><table align="left" cellpadding="0" cellspacing="0" border="0" width="100%" height="100%"><tbody><tr><td width="20px" style=" display:none;"><img src="./e-gas_files/blank.gif" border="0" width="18px" height="18px"></td><td width="100%" align="left" style="  overflow:hidden;"><table width="100%" height="100%" cellpadding="0" cellspacing="0"><tbody><tr><td title="Setores" class="defaultMenuText" nowrap="nowrap">Setores</td><td width="12px"><img style="display:none"></td></tr></tbody></table></td></tr></tbody></table></td></tr><tr style="vertical-align: top;"><td align="center" nowrap="" id="menuItem_manter_coletaAdm" class="menuButtonSecond"><table align="left" cellpadding="0" cellspacing="0" border="0" width="100%" height="100%"><tbody><tr><td width="20px" style=" display:none;"><img src="./e-gas_files/blank.gif" border="0" width="18px" height="18px"></td><td width="100%" align="left" style="  overflow:hidden;"><table width="100%" height="100%" cellpadding="0" cellspacing="0"><tbody><tr><td title="Bairros Config" class="defaultMenuText" nowrap="nowrap">Bairros Config</td><td width="12px"><img style="display:none"></td></tr></tbody></table></td></tr></tbody></table></td></tr><tr style="vertical-align: top;"><td align="center" style="padding: 2px 2px 1px;"><div class="menuDividerY" style="height: 0px;">&nbsp;</div></td></tr><tr style="vertical-align: top;"><td align="center" nowrap="" id="menuItem_manter_coletaAdm" class="menuButtonSecond"><table align="left" cellpadding="0" cellspacing="0" border="0" width="100%" height="100%"><tbody><tr><td width="20px" style=" display:none;"><img src="./e-gas_files/blank.gif" border="0" width="18px" height="18px"></td><td width="100%" align="left" style="  overflow:hidden;"><table width="100%" height="100%" cellpadding="0" cellspacing="0"><tbody><tr><td title="Casos de Uso" class="defaultMenuText" nowrap="nowrap">Casos de Uso</td><td width="12px"><img style="display:none"></td></tr></tbody></table></td></tr></tbody></table></td></tr><tr style="vertical-align: top;"><td align="center" nowrap="" id="menuItem_manter_coletaAdm" class="menuButtonSecond"><table align="left" cellpadding="0" cellspacing="0" border="0" width="100%" height="100%"><tbody><tr><td width="20px" style=" display:none;"><img src="./e-gas_files/blank.gif" border="0" width="18px" height="18px"></td><td width="100%" align="left" style="  overflow:hidden;"><table width="100%" height="100%" cellpadding="0" cellspacing="0"><tbody><tr><td title="Perfis" class="defaultMenuText" nowrap="nowrap">Perfis</td><td width="12px"><img style="display:none"></td></tr></tbody></table></td></tr></tbody></table></td></tr><tr style="vertical-align: top;"><td align="center" nowrap="" id="menuItem_1467814380871" class="menuButtonSecond"><table align="left" cellpadding="0" cellspacing="0" border="0" width="100%" height="100%"><tbody><tr><td width="20px" style=" display:none;"><img src="./e-gas_files/blank.gif" border="0" width="18px" height="18px"></td><td width="100%" align="left" style="  overflow:hidden;"><table width="100%" height="100%" cellpadding="0" cellspacing="0"><tbody><tr><td title="Certificados" class="defaultMenuText" nowrap="nowrap">Certificados</td><td width="12px"><img src="./e-gas_files/btn_rt1.gif"></td></tr></tbody></table></td></tr></tbody></table></td></tr><tr style="vertical-align: top;"><td align="center" nowrap="" id="menuItem_1467814380872" class="menuButtonSecond"><table align="left" cellpadding="0" cellspacing="0" border="0" width="100%" height="100%"><tbody><tr><td width="20px" style=" display:none;"><img src="./e-gas_files/blank.gif" border="0" width="18px" height="18px"></td><td width="100%" align="left" style="  overflow:hidden;"><table width="100%" height="100%" cellpadding="0" cellspacing="0"><tbody><tr><td title="Estoque medicamentos" class="defaultMenuText" nowrap="nowrap">Estoque medicamentos</td><td width="12px"><img src="./e-gas_files/btn_rt1.gif"></td></tr></tbody></table></td></tr></tbody></table></td></tr><td></td><td align="right" width="100%" class="menuName" style="display: none;">&nbsp;</td><td style="display: none;">&nbsp;</td></tr></tbody></table><table cellpadding="0" cellspacing="0" class="secondMenuTable" width="1" height="1" unselectable="on" style="display: none; z-index: 30; position: absolute;"><tbody><tr><td width="3px" style="display:none"><div class="menuHandle">&nbsp;</div></td><td class="menuName" style="display:none"></td><tr style="vertical-align: top;"><td align="center" nowrap="" id="menuItem_manter_coletaAdm" class="menuButtonSecond"><table align="left" cellpadding="0" cellspacing="0" border="0" width="100%" height="100%"><tbody><tr><td width="20px" style=" "><img src="./e-gas_files/blank.gif" border="0" width="18px" height="18px"></td><td width="100%" align="left" style="  padding-left:2px; overflow:hidden;"><table width="100%" height="100%" cellpadding="0" cellspacing="0"><tbody><tr><td title="Instalação Física para Assistência" class="defaultMenuText" nowrap="nowrap">Instalação Física para Assistência</td><td width="12px"><img style="display:none"></td></tr></tbody></table></td></tr></tbody></table></td></tr><tr style="vertical-align: top;"><td align="center" nowrap="" id="menuItem_manter_coletaAdm" class="menuButtonSecond"><table align="left" cellpadding="0" cellspacing="0" border="0" width="100%" height="100%"><tbody><tr><td width="20px" style=" "><img src="./e-gas_files/blank.gif" border="0" width="18px" height="18px"></td><td width="100%" align="left" style="  padding-left:2px; overflow:hidden;"><table width="100%" height="100%" cellpadding="0" cellspacing="0"><tbody><tr><td title="Equipamento" class="defaultMenuText" nowrap="nowrap">Equipamento</td><td width="12px"><img style="display:none"></td></tr></tbody></table></td></tr></tbody></table></td></tr><tr style="vertical-align: top;"><td align="center" nowrap="" id="menuItem_manter_coletaAdm" class="menuButtonSecond"><table align="left" cellpadding="0" cellspacing="0" border="0" width="100%" height="100%"><tbody><tr><td width="20px" style=" "><img src="./e-gas_files/blank.gif" border="0" width="18px" height="18px"></td><td width="100%" align="left" style="  padding-left:2px; overflow:hidden;"><table width="100%" height="100%" cellpadding="0" cellspacing="0"><tbody><tr><td title="Especialidade" class="defaultMenuText" nowrap="nowrap">Especialidade</td><td width="12px"><img style="display:none"></td></tr></tbody></table></td></tr></tbody></table></td></tr><tr style="vertical-align: top;"><td align="center" nowrap="" id="menuItem_manter_coletaAdm" class="menuButtonSecond"><table align="left" cellpadding="0" cellspacing="0" border="0" width="100%" height="100%"><tbody><tr><td width="20px" style=" "><img src="./e-gas_files/blank.gif" border="0" width="18px" height="18px"></td><td width="100%" align="left" style="  padding-left:2px; overflow:hidden;"><table width="100%" height="100%" cellpadding="0" cellspacing="0"><tbody><tr><td title="Atendimento Prestado" class="defaultMenuText" nowrap="nowrap">Atendimento Prestado</td><td width="12px"><img style="display:none"></td></tr></tbody></table></td></tr></tbody></table></td></tr><tr style="vertical-align: top;"><td align="center" nowrap="" id="menuItem_manter_coletaAdm" class="menuButtonSecond"><table align="left" cellpadding="0" cellspacing="0" border="0" width="100%" height="100%"><tbody><tr><td width="20px" style=" "><img src="./e-gas_files/blank.gif" border="0" width="18px" height="18px"></td><td width="100%" align="left" style="  padding-left:2px; overflow:hidden;"><table width="100%" height="100%" cellpadding="0" cellspacing="0"><tbody><tr><td title="Tipo Unidade de Saúde" class="defaultMenuText" nowrap="nowrap">Tipo Unidade de Saúde</td><td width="12px"><img style="display:none"></td></tr></tbody></table></td></tr></tbody></table></td></tr><tr style="vertical-align: top;"><td align="center" nowrap="" id="menuItem_manter_coletaAdm" class="menuButtonSecond"><table align="left" cellpadding="0" cellspacing="0" border="0" width="100%" height="100%"><tbody><tr><td width="20px" style=" "><img src="./e-gas_files/blank.gif" border="0" width="18px" height="18px"></td><td width="100%" align="left" style="  padding-left:2px; overflow:hidden;"><table width="100%" height="100%" cellpadding="0" cellspacing="0"><tbody><tr><td title="Natureza da Organização" class="defaultMenuText" nowrap="nowrap">Natureza da Organização</td><td width="12px"><img style="display:none"></td></tr></tbody></table></td></tr></tbody></table></td></tr><tr style="vertical-align: top;"><td align="center" nowrap="" id="menuItem_manter_coletaAdm" class="menuButtonSecond"><table align="left" cellpadding="0" cellspacing="0" border="0" width="100%" height="100%"><tbody><tr><td width="20px" style=" "><img src="./e-gas_files/blank.gif" border="0" width="18px" height="18px"></td><td width="100%" align="left" style="  padding-left:2px; overflow:hidden;"><table width="100%" height="100%" cellpadding="0" cellspacing="0"><tbody><tr><td title="Serviços de Apoio" class="defaultMenuText" nowrap="nowrap">Serviços de Apoio</td><td width="12px"><img style="display:none"></td></tr></tbody></table></td></tr></tbody></table></td></tr><tr style="vertical-align: top;"><td align="center" nowrap="" id="menuItem_manter_coletaAdm" class="menuButtonSecond"><table align="left" cellpadding="0" cellspacing="0" border="0" width="100%" height="100%"><tbody><tr><td width="20px" style=" "><img src="./e-gas_files/blank.gif" border="0" width="18px" height="18px"></td><td width="100%" align="left" style="  padding-left:2px; overflow:hidden;"><table width="100%" height="100%" cellpadding="0" cellspacing="0"><tbody><tr><td title="Serviços Especializados" class="defaultMenuText" nowrap="nowrap">Serviços Especializados</td><td width="12px"><img style="display:none"></td></tr></tbody></table></td></tr></tbody></table></td></tr><tr style="vertical-align: top;"><td align="center" nowrap="" id="menuItem_manter_coletaAdm" class="menuButtonSecond"><table align="left" cellpadding="0" cellspacing="0" border="0" width="100%" height="100%"><tbody><tr><td width="20px" style=" "><img src="./e-gas_files/blank.gif" border="0" width="18px" height="18px"></td><td width="100%" align="left" style="  padding-left:2px; overflow:hidden;"><table width="100%" height="100%" cellpadding="0" cellspacing="0"><tbody><tr><td title="Serviços e Classificação" class="defaultMenuText" nowrap="nowrap">Serviços e Classificação</td><td width="12px"><img style="display:none"></td></tr></tbody></table></td></tr></tbody></table></td></tr><tr style="vertical-align: top;"><td align="center" nowrap="" id="menuItem_manter_coletaAdm" class="menuButtonSecond"><table align="left" cellpadding="0" cellspacing="0" border="0" width="100%" height="100%"><tbody><tr><td width="20px" style=" "><img src="./e-gas_files/blank.gif" border="0" width="18px" height="18px"></td><td width="100%" align="left" style="  padding-left:2px; overflow:hidden;"><table width="100%" height="100%" cellpadding="0" cellspacing="0"><tbody><tr><td title="Habilitações" class="defaultMenuText" nowrap="nowrap">Habilitações</td><td width="12px"><img style="display:none"></td></tr></tbody></table></td></tr></tbody></table></td></tr><td></td><td align="right" width="100%" class="menuName" style="display: none;">&nbsp;</td><td style="display: none;">&nbsp;</td></tr></tbody></table><table cellpadding="0" cellspacing="0" class="secondMenuTable" width="1" height="1" unselectable="on" style="display: none; z-index: 30; position: absolute;"><tbody><tr><td width="3px" style="display:none"><div class="menuHandle">&nbsp;</div></td><td class="menuName" style="display:none"></td><tr style="vertical-align: top;"><td align="center" nowrap="" id="menuItem_manter_coletaAdm" class="menuButtonSecond"><table align="left" cellpadding="0" cellspacing="0" border="0" width="100%" height="100%"><tbody><tr><td width="20px" style=" "><img src="./e-gas_files/blank.gif" border="0" width="18px" height="18px"></td><td width="100%" align="left" style="  padding-left:2px; overflow:hidden;"><table width="100%" height="100%" cellpadding="0" cellspacing="0"><tbody><tr><td title="Certificados Digital" class="defaultMenuText" nowrap="nowrap">Certificados Digital</td><td width="12px"><img style="display:none"></td></tr></tbody></table></td></tr></tbody></table></td></tr><tr style="vertical-align: top;"><td align="center" nowrap="" id="menuItem_manter_coletaAdm" class="menuButtonSecond"><table align="left" cellpadding="0" cellspacing="0" border="0" width="100%" height="100%"><tbody><tr><td width="20px" style=" "><img src="./e-gas_files/blank.gif" border="0" width="18px" height="18px"></td><td width="100%" align="left" style="  padding-left:2px; overflow:hidden;"><table width="100%" height="100%" cellpadding="0" cellspacing="0"><tbody><tr><td title="Certificados Usuários" class="defaultMenuText" nowrap="nowrap">Certificados Usuários</td><td width="12px"><img style="display:none"></td></tr></tbody></table></td></tr></tbody></table></td></tr><td></td><td align="right" width="100%" class="menuName" style="display: none;">&nbsp;</td><td style="display: none;">&nbsp;</td></tr></tbody></table><table cellpadding="0" cellspacing="0" class="secondMenuTable" width="1" height="1" unselectable="on" style="display: none; z-index: 30; position: absolute;"><tbody><tr><td width="3px" style="display:none"><div class="menuHandle">&nbsp;</div></td><td class="menuName" style="display:none"></td><tr style="vertical-align: top;"><td align="center" nowrap="" id="menuItem_manter_coletaAdm" class="menuButtonSecond"><table align="left" cellpadding="0" cellspacing="0" border="0" width="100%" height="100%"><tbody><tr><td width="20px" style=" "><img src="./e-gas_files/blank.gif" border="0" width="18px" height="18px"></td><td width="100%" align="left" style="  padding-left:2px; overflow:hidden;"><table width="100%" height="100%" cellpadding="0" cellspacing="0"><tbody><tr><td title="Fonecedores" class="defaultMenuText" nowrap="nowrap">Fonecedores</td><td width="12px"><img style="display:none"></td></tr></tbody></table></td></tr></tbody></table></td></tr><tr style="vertical-align: top;"><td align="center" nowrap="" id="menuItem_manter_coletaAdm" class="menuButtonSecond"><table align="left" cellpadding="0" cellspacing="0" border="0" width="100%" height="100%"><tbody><tr><td width="20px" style=" "><img src="./e-gas_files/blank.gif" border="0" width="18px" height="18px"></td><td width="100%" align="left" style="  padding-left:2px; overflow:hidden;"><table width="100%" height="100%" cellpadding="0" cellspacing="0"><tbody><tr><td title="Unidade Padrão" class="defaultMenuText" nowrap="nowrap">Unidade Padrão</td><td width="12px"><img style="display:none"></td></tr></tbody></table></td></tr></tbody></table></td></tr><tr style="vertical-align: top;"><td align="center" nowrap="" id="menuItem_manter_coletaAdm" class="menuButtonSecond"><table align="left" cellpadding="0" cellspacing="0" border="0" width="100%" height="100%"><tbody><tr><td width="20px" style=" "><img src="./e-gas_files/blank.gif" border="0" width="18px" height="18px"></td><td width="100%" align="left" style="  padding-left:2px; overflow:hidden;"><table width="100%" height="100%" cellpadding="0" cellspacing="0"><tbody><tr><td title="Tipo Produto" class="defaultMenuText" nowrap="nowrap">Tipo Produto</td><td width="12px"><img style="display:none"></td></tr></tbody></table></td></tr></tbody></table></td></tr><tr style="vertical-align: top;"><td align="center" nowrap="" id="menuItem_manter_coletaAdm" class="menuButtonSecond"><table align="left" cellpadding="0" cellspacing="0" border="0" width="100%" height="100%"><tbody><tr><td width="20px" style=" "><img src="./e-gas_files/blank.gif" border="0" width="18px" height="18px"></td><td width="100%" align="left" style="  padding-left:2px; overflow:hidden;"><table width="100%" height="100%" cellpadding="0" cellspacing="0"><tbody><tr><td title="Produtos" class="defaultMenuText" nowrap="nowrap">Produtos</td><td width="12px"><img style="display:none"></td></tr></tbody></table></td></tr></tbody></table></td></tr><tr style="vertical-align: top;"><td align="center" nowrap="" id="menuItem_manter_coletaAdm" class="menuButtonSecond"><table align="left" cellpadding="0" cellspacing="0" border="0" width="100%" height="100%"><tbody><tr><td width="20px" style=" "><img src="./e-gas_files/blank.gif" border="0" width="18px" height="18px"></td><td width="100%" align="left" style="  padding-left:2px; overflow:hidden;"><table width="100%" height="100%" cellpadding="0" cellspacing="0"><tbody><tr><td title="Solicitação Produtos" class="defaultMenuText" nowrap="nowrap">Solicitação Produtos</td><td width="12px"><img style="display:none"></td></tr></tbody></table></td></tr></tbody></table></td></tr><tr style="vertical-align: top;"><td align="center" style="padding: 2px 2px 1px;"><div class="menuDividerY" style="height: 0px;">&nbsp;</div></td></tr><tr style="vertical-align: top;"><td align="center" nowrap="" id="menuItem_manter_coletaAdm" class="menuButtonSecond"><table align="left" cellpadding="0" cellspacing="0" border="0" width="100%" height="100%"><tbody><tr><td width="20px" style=" "><img src="./e-gas_files/blank.gif" border="0" width="18px" height="18px"></td><td width="100%" align="left" style="  padding-left:2px; overflow:hidden;"><table width="100%" height="100%" cellpadding="0" cellspacing="0"><tbody><tr><td title="Medicamentos" class="defaultMenuText" nowrap="nowrap">Medicamentos</td><td width="12px"><img style="display:none"></td></tr></tbody></table></td></tr></tbody></table></td></tr><tr style="vertical-align: top;"><td align="center" nowrap="" id="menuItem_manter_coletaAdm" class="menuButtonSecond"><table align="left" cellpadding="0" cellspacing="0" border="0" width="100%" height="100%"><tbody><tr><td width="20px" style=" "><img src="./e-gas_files/blank.gif" border="0" width="18px" height="18px"></td><td width="100%" align="left" style="  padding-left:2px; overflow:hidden;"><table width="100%" height="100%" cellpadding="0" cellspacing="0"><tbody><tr><td title="Solicitação Medicamento" class="defaultMenuText" nowrap="nowrap">Solicitação Medicamento</td><td width="12px"><img style="display:none"></td></tr></tbody></table></td></tr></tbody></table></td></tr><tr style="vertical-align: top;"><td align="center" style="padding: 2px 2px 1px;"><div class="menuDividerY" style="height: 0px;">&nbsp;</div></td></tr><tr style="vertical-align: top;"><td align="center" nowrap="" id="menuItem_manter_coletaAdm" class="menuButtonSecond"><table align="left" cellpadding="0" cellspacing="0" border="0" width="100%" height="100%"><tbody><tr><td width="20px" style=" "><img src="./e-gas_files/blank.gif" border="0" width="18px" height="18px"></td><td width="100%" align="left" style="  padding-left:2px; overflow:hidden;"><table width="100%" height="100%" cellpadding="0" cellspacing="0"><tbody><tr><td title="Compras" class="defaultMenuText" nowrap="nowrap">Compras</td><td width="12px"><img style="display:none"></td></tr></tbody></table></td></tr></tbody></table></td></tr><tr style="vertical-align: top;"><td align="center" nowrap="" id="menuItem_manter_coletaAdm" class="menuButtonSecond"><table align="left" cellpadding="0" cellspacing="0" border="0" width="100%" height="100%"><tbody><tr><td width="20px" style=" "><img src="./e-gas_files/blank.gif" border="0" width="18px" height="18px"></td><td width="100%" align="left" style="  padding-left:2px; overflow:hidden;"><table width="100%" height="100%" cellpadding="0" cellspacing="0"><tbody><tr><td title="Almoxarifado" class="defaultMenuText" nowrap="nowrap">Almoxarifado</td><td width="12px"><img style="display:none"></td></tr></tbody></table></td></tr></tbody></table></td></tr><td></td><td align="right" width="100%" class="menuName" style="display: none;">&nbsp;</td><td style="display: none;">&nbsp;</td></tr></tbody></table></div></td>
+					                  </tr>
+					 		</tbody></table>
+ 						</td>
+ 					</tr>
+ 				</tbody></table>  
+ 			</td>
+ 		</tr>
+ 	</tbody></table>
+
+
+ 		
+ <table cellpadding="0" cellspacing="0" width="785px" align="center" height="950px" class="tabelaTopo">
+ 	<tbody><tr>
+ 		<td width="15"></td> 
+ 			<td valign="top">
+ 			<span id="marcadorVoltaLayout"></span><span id="renderizadorLayout"></span>
+<br>
+<div id="gerandoRelatorio" style="display:none;">
+	<p>Aguarde, o relatório está sendo gerado.</p>
+	<img src="./e-gas_files/pb_demoUload.gif">
+</div>
+<script>
+function validaProcessoAcompanhamentoCRAS(){
+	dataAnotacao = 		document.getElementById("idDataAnotacaoAcom");
+	//situacao          = document.getElementById("idSituacaoAcom");
+	//var comboSituacao    = situacao.options[situacao.selectedIndex].value;
+	descricao          = document.getElementById("idDescricaoAcom").value;
+
+	if(dataAnotacao == "" || descricao == "" ){
+		alert("Os seguintes campos devem ter registros: Data da Anotação, Descrição");
+		return false
+	}else{
+		myformDetailAcompanhamentoCras.sincronizaGrid(); myformAcompanhamentoCras.processaDados([mygridAcompanhamentoCras]);
+		return false;
+	}
+}
+</script>
+	
+
+<script type="text/javascript" src="./e-gas_files/jquery-dom(1).js"></script>
+<script type="text/javascript" src="./e-gas_files/tipos(1).js"></script>
+<script type="text/javascript" src="./e-gas_files/popup(1).js"></script>
+<script type="text/javascript" src="./e-gas_files/tab-view.js"></script>
+	
+<link rel="stylesheet" href="./e-gas_files/tab-view.css" type="text/css" media="screen">
+<link rel="stylesheet" type="text/css" href="./e-gas_files/estilo.css">
+	
+<fieldset class="formConsulta" grid="mygrid_578rotas" autolayout="done" id="formConsulta10">
+     <legend>Filtros para pesquisa: </legend>
+     <span class="formDetail" exibe="" grid="grid_Motorista_3013" id="formDetail1">
+     	<div class="colunaLayout m"><div class="labelLayout" align="left">Motorista : </div><input type="text" class="tamanoLimitado:500" tamanho="m" name="varnomeMotorista" popup="pp_Motorista_3013" label="Motorista" id="tamanoLimitado:5007" meulabel="[object HTMLDivElement]" sentenca="nome" style="width: calc(100% - 180px);"><input id="varIdvarnomeMotorista" type="button" class="botaoPP" popup="pp_Motorista_3013" criadoautomatico="" sentenca="codigo"></div> <!-- ou <textarea  name = 'cartaoSus'  ></textarea>  -->
+     </span>
+	     <input type="hidden" class="inteiro" name="codigo" id="idCodigo">
+		 
+	     <div class="colunaLayout barra" align="right"><div align="right"><input type="submit" class="botao" value="Pesquisar"></div></div>
+</fieldset>
+
+
+<center><table class="grade2" cellpadding="0" cellspacing="0"><tbody><tr><td>
+<div class="cabecalho">Rotas [<span class="quantidadeGrid" grid="mygrid_578rotas" id="quantidadeGrid2">0</span>]</div>
+
+<span id="salvandogridbox_578" style="display: none;"><center>Carregando...<img src="./e-gas_files/pb_demoUload(1).gif"></center></span><div id="gridbox_578" style="height: 200px; width: 740.1px; cursor: default;" visao="1054" idlinha="codigo" class=" gridbox"><div class="xhdr" style="width: 100%; height: 26px; overflow: hidden; position: relative;"><img src="./e-gas_files/sort_desc.gif" style="display: none; position: absolute;"><table cellpadding="0" cellspacing="0" class="hdr" style="width: 740px; table-layout: fixed; margin-right: 20px; padding-right: 20px;"><tbody><tr style="height: auto;"><th style="height: 0px; display: none; white-space: nowrap; width: 0px;"></th><th style="height: 0px; width: 370px;"></th><th style="height: 0px; width: 370px;"></th></tr><tr><td style="display: none; white-space: nowrap;"><div class="hdrcell">codigo</div></td><td><div class="hdrcell">hora_fim</div></td><td><div class="hdrcell">hora_inicio</div></td></tr></tbody></table></div><div class="objbox" style="width: 100%; overflow: auto; height: 174px;"><table cellpadding="0" cellspacing="0" class="obj row20px" style="width: 740px; table-layout: fixed;"><tbody><tr style="height: auto;"><th style="height: 0px; width: 0px; display: none;"></th><th style="height: 0px; width: 370px;"></th><th style="height: 0px; width: 370px;"></th></tr></tbody></table></div></div>
+
+
+<div align="right" style="background-color:#F2F6F7;color: black" class="grade2">
+<input type="button" class="botao" onclick="mygrid_578rotas.insereLinha();" value="Novo">
+<input type="button" class="botao" onclick="mygrid_578rotas.apagaLinha();" value="Apaga">
+<input type="button" class="botao" onclick="mygrid_578rotas.reCarrega();" value="Descarta">
+</div>
+<span grid="mygrid_578rotas" class="formDetail" id="formDetail3" style="display: none;"> 
+
+<fieldset autolayout="done" id="11"> 
+     <legend>Dados Básicos: </legend>
+
+
+<input type="hidden" name="rotas_codigo" sentenca="codigo">
+<div class="colunaLayout p"><div class="labelLayout" align="left">Hora_fim : </div><input type="text" class="tamanoLimitado:500" name="hora_fim" id="tamanoLimitado:5008" meulabel="[object HTMLDivElement]" sentenca="hora_fim" label="hora_fim" style="width: calc(100% - 77px);"></div> <!-- ou <textarea  name = 'hora_fim' ></textarea>  -->
+<div class="colunaLayout p"><div class="labelLayout" align="left">Hora_inicio : </div><input type="text" class="tamanoLimitado:500" name="hora_inicio" id="tamanoLimitado:5009" meulabel="[object HTMLDivElement]" sentenca="hora_inicio" label="hora_inicio" style="width: calc(100% - 88px);"></div> <!-- ou <textarea  name = 'hora_inicio' ></textarea>  -->
+</fieldset>
+
+<input type="hidden" name="rotas_operacao"></span></td></tr></tbody></table>
+
+<span variavel="pp_Motorista_3013" largura="610" altura="360" titulo="Motoristas" class="popup" id="popup4" popupinicializado="true" style="width: 610px; border: 1px solid; padding: 0px; position: absolute; text-align: center; display: none; left: 523.5px; top: 453px; background-color: rgb(192, 192, 192);"><span class="window-buttons" id="window-buttons5" style="display: block; cursor: move; margin: 0px; position: absolute; left: 0px; text-align: right; line-height: 22px; width: 608px; height: 22px;"><input id="minimize-popup4" alt="" title="" value="_" type="button"><input id="close-popup4" alt="" title="" value="X" type="button"></span><span class="window-header" id="window-header6" style="display: block; margin: 0px; padding: 0px 0px 0px 5px; left: 0px; line-height: 22px; text-align: left; width: 605px; height: 22px; color: navy; font-weight: bold; background-color: rgb(211, 211, 211);">Motoristas</span><div><div class="container-window" style="margin: 3px; width: 602px; height: 331px; text-align: left; overflow: auto; border: 1px solid; background-color: rgb(255, 255, 255);"> 
+     <span id="salvandoi281idgridboxPopup" style="display: none;"><center>Carregando...<img src="./e-gas_files/pb_demoUload(1).gif"></center></span><div id="i281idgridboxPopup" style="height: 250px; width: 580px; cursor: default;" visao="452" idlinha="codigo" popup="pp_Motorista_3013" class=" gridbox"><div class="xhdr" style="width: 100%; height: 25px; overflow: hidden; position: relative;"><img src="./e-gas_files/sort_desc.gif" style="display: none; position: absolute;"><table cellpadding="0" cellspacing="0" class="hdr" style="width: 100%; table-layout: fixed; margin-right: 20px; padding-right: 20px;"><tbody><tr style="height: auto;"><th style="height: 0px; display: none; white-space: nowrap;"></th><th style="height: 0px;"></th></tr><tr><td style="display: none; white-space: nowrap;"><div class="hdrcell">codigo</div></td><td><div class="hdrcell">Nome</div></td></tr></tbody></table></div><div class="objbox" style="width: 100%; overflow: auto;"><table cellpadding="0" cellspacing="0" class="obj row20px" style="width: 100%; table-layout: fixed;"><tbody><tr style="height: auto;"><th style="height: 0px; width: 0px; display: none;"></th><th style="height: 0px;"></th></tr></tbody></table></div></div> 
+     <fieldset method="get" class="formConsulta" grid="grid_Motorista_3013" autolayout="done" id="formConsulta12"> 
+           <div class="colunaLayout p"><div class="labelLayout" align="left">Nome : </div><input type="text" name="varnome" label="Nome" meulabel="[object HTMLDivElement]" style="width: calc(100% - 59px);"></div>
+           <div align="right"><input type="submit" class="botao" value="Pesquisar"></div>
+    </fieldset>
+</div></div></span>
+
+<!-- <div id="mapa" style="height: 500px; width: 700px"></div>
+<div id="trajeto-texto" style="height: 300px; width: 200px"></div> -->
+
+<script>
+//initTabs('dhtmlgoodies_tabView',Array('Identif.', 'Hist. Pregres.', 'Medicamentos', 'Vacinação', 'Alimentação', 'Ativid. Cotid.', 'Genograma', 'Ex. Físico', 'Impres. Diagn.'),0,750,380,Array(false,false,false,false,false,false,false,false,false));
+
+{
+ var marraycoluna = new Array();
+
+var coluna_578rotas_codigo = new colunaVV("codigo",0,"center","inteiro","rotas_codigo",'0',0,true);
+coluna_578rotas_codigo.linhaConsulta("obj.codigo",null,"integer");
+marraycoluna.push(coluna_578rotas_codigo);
+
+ var coluna_578hora_fim = new colunaVV("hora_fim",'*',"center","tamanhoLimitado","hora_fim",'',0,true);
+coluna_578hora_fim.linhaConsulta("obj.hora_fim",null,"string");
+marraycoluna.push(coluna_578hora_fim);
+
+ var coluna_578hora_inicio = new colunaVV("hora_inicio",'*',"center","tamanhoLimitado","hora_inicio",'',0,true);
+coluna_578hora_inicio.linhaConsulta("obj.hora_inicio",null,"string");
+marraycoluna.push(coluna_578hora_inicio);
+
+ 
+var mygrid_578rotasv = new gridVV('gridbox_578', marraycoluna);
+mygrid_578rotasv.setPrimeiroCampoEditavel(1);
+mygrid_578rotasv.setImagePath("/netGasV2/imgs/");
+mygrid_578rotasv.setCampoAcao("rotas_operacao");
+mygrid_578rotasv.init();
+/* mygrid_578rotasv.carregaVisao(); */
+
+window['mygrid_578rotas'] = mygrid_578rotasv;
+}
+
+var myform_578  = new formGridVV("testeForm_578");
+myform_578.trataSucesso = processaSucesso_578;
+myform_578.debug = false;
+
+
+function processaSucesso_578(){
+	alert("XXXXX salvos com sucesso");
+mygrid_578rotas.reCarrega(document.getElementById('gridbox_578').value);
+}
+
+/* POP UP MOTORISTA */
+
+{
+	 var  marraypopup = new Array(); 
+
+
+	var coluna3013codigo = new colunaVV("codigo",0,"center","ro","",'',0,true);
+	coluna3013codigo.linhaConsulta("obj.codigo",null);
+	marraypopup.push(coluna3013codigo);
+
+
+	var coluna3013nome = new colunaVV("Nome",'*',"center","ro","varnomeMotorista",'',0,true);
+	coluna3013nome.linhaConsulta("obj.nome",null);
+	marraypopup.push(coluna3013nome);
+
+
+
+	var g281gridpp = new gridVV('i281idgridboxPopup',marraypopup);
+	g281gridpp.setImagePath("/netGasV2/imgs/");
+	g281gridpp.init();
+	window['grid_Motorista_3013'] = g281gridpp;
+	 }
+
+</script>
+
+
+<!-- MAPA -->
+
+        <script src="./e-gas_files/js" type="text/javascript"></script>
+        <script src="./e-gas_files/markerclusterer.js"></script>
+        <script src="./e-gas_files/infobox.js"></script>
+        <script src="./e-gas_files/map.js"></script>
+        <script src="./e-gas_files/html2canvas.js"></script>
+        <script type="text/javascript">
+            function tirarFoto(){
+                alert("OPA !");
+                // html2canvas(document.getElementById("mapa"), {
+                //     "logging": true //Habilita os logs
+                // }).then(function(canvas) {
+                //     var img = new Image();
+                //     img.onload = function () {
+                //         img.onload = null;
+                //         document.getElementById("output").appendChild(img);
+                //     };
+                //     img.src = canvas.toDataURL("image/jpg");
+                // });
+
+
+                var transform=$(".gm-style>div:first>div").css("transform")
+                var comp=transform.split(",") //split up the transform matrix
+                var mapleft=parseFloat(comp[4]) //get left value
+                var maptop=parseFloat(comp[5])  //get top value
+                $(".gm-style>div:first>div").css({ //get the map container. not sure if stable
+                  "transform":"none",
+                  "left":mapleft,
+                  "top":maptop,
+                })
+                html2canvas($('#trajeto-texto'),
+                {
+                  useCORS: true,
+                  onrendered: function(canvas)
+                  {
+                    //var img = new Image();
+                    
+                    var dataUrl= canvas.toDataURL('image/png');
+                    // img.onload = function () {
+                    //     img.onload = null;
+                    //     document.getElementById("output").appendChild(dataUrl);
+                    // };
+                    location.href=dataUrl //for testing I never get window.open to work
+                    $(".gm-style>div:first>div").css({
+                      left:0,
+                      top:0,
+                      "transform":transform
+                    });
+                  }
+                });
+            }
+        </script>
+
+
+	</center></td>
+  	<td width="15"></td>
+  	</tr>
+  	</tbody></table>
+  	<table style="background-color: #F5F5F5; " border="0px" cellpadding="0" cellspacing="0" height="100%" align="center" width="775px">
+  		<tbody><tr> 
+				<td align="right" style="color:#868686; font-family: calibri;font-weight: bold;padding-right:16px;">Versão: 2.0</td>
+		</tr>		
+  	</tbody></table>
+ 	
+ 	<script>
+ 	
+ 	var erisvelton = null;
+ 	var nomeRelatorioVV = "";
+ 	
+ 	function monotoraRelatorioVV(){
+ 		if(nomeRelatorioVV != ""){
+ 			var mpalavra = bind("nomeRelatorio="+nomeRelatorioVV,"/jsp/gridVV/relatorioProcessando.jsp","GET")	;
+ 			if(mpalavra == "1")
+ 				setTimeout(monotoraRelatorioVV,5000);
+ 			else{
+ 				nomeRelatorioVV = "";
+ 				document.getElementById("gerandoRelatorio").style.display = "none";
+ 			}
+ 				
+ 		}
+ 		
+ 	}
+ 	
+ 	function startMonotoraRelatorioVV(nome){
+ 		nomeRelatorioVV = nome;
+ 		setTimeout(monotoraRelatorioVV,5000);
+ 	}
+ 	
+ 	$( "input[value='Relatorio']" ).click(function(){
+ 		document.getElementById("gerandoRelatorio").style.display = "block";
+ 	});
+ 	
+ 	var VVpopupProcessaSim = null;
+ 	var VVpopupProcessaNao = null;
+ 	
+ 	function VVpopupFuncaoSim(){
+ 		
+ 		if(VVpopupProcessaSim != null)
+ 			VVpopupProcessaSim();
+ 		popVVsimNao.hide();
+ 	}
+ 	
+ 	function VVpopupFuncaoNao(){
+ 		if(VVpopupProcessaNao != null)
+ 			VVpopupProcessaNao();
+ 		popVVsimNao.hide();
+ 	}
+ 	
+ 	function VVPopupSimNao(msg, sim, nao,texto,trataSucesso){
+ 		
+ 		document.getElementById("idVVgridUrlSimNao").value = texto;
+ 		document.getElementById("idVVgridUrlSimSucesso").value = trataSucesso;
+ 		
+ 		document.getElementById("VVpopupMsgSimNao").innerHTML = msg;
+ 		if (typeof sim != "undefined")
+ 			VVpopupProcessaSim = sim;
+ 		else
+ 			VVpopupProcessaSim = null;
+ 		if (typeof nao != "undefined")
+ 			VVpopupProcessaNao = nao;
+ 		else
+ 			VVpopupProcessaNao = null;
+ 		
+ 		erisvelton = VVgridUrlSimNao;
+ 		
+ 		popVVsimNao.setTitle(texto); 
+ 		
+ 		document.getElementById("linhaVVSimNaoOk").style.display = "none";
+ 		document.getElementById("linhaVVSimNao").style.display = "";
+ 		
+ 		popVVsimNao.show();
+ 		
+ 	}
+ 	
+ 	
+	function VVPopupAlert(msg, texto){
+ 		
+ 		document.getElementById("idVVgridUrlSimNao").value = texto;
+ 		
+ 		document.getElementById("VVpopupMsgSimNao").innerHTML = msg;
+ 		
+ 		
+ 		erisvelton = VVgridUrlSimNao;
+ 		
+ 		popVVsimNao.setTitle(texto); 
+ 		
+ 		document.getElementById("linhaVVSimNaoOk").style.display = "";
+ 		document.getElementById("linhaVVSimNao").style.display = "none";
+ 		
+ 		popVVsimNao.show();
+ 		
+ 	}
+	
+	
+	alert2 = function (par) {
+		new VVPopupAlert(par,"Mensagem");
+    }
+ 	</script>
+
+
+
+	<div id="VVpopupSimNao" style="width: 400px; border: 1px solid; padding: 0px; position: absolute; text-align: center; display: none; left: 628.5px; top: 575px; background-color: rgb(192, 192, 192);"><span class="window-buttons" id="window-buttons14" style="display: block; cursor: move; margin: 0px; position: absolute; left: 0px; text-align: right; line-height: 22px; width: 398px; height: 22px;"><input id="minimize-VVpopupSimNao" alt="" title="" value="_" type="button"><input id="close-VVpopupSimNao" alt="" title="" value="X" type="button"></span><span class="window-header" id="window-header15" style="display: block; margin: 0px; padding: 0px 0px 0px 5px; left: 0px; line-height: 22px; text-align: left; width: 395px; height: 22px; color: navy; font-weight: bold; background-color: rgb(211, 211, 211);">Mensagem</span><div><div class="container-window" style="margin: 3px; width: 392px; height: 101px; text-align: left; overflow: auto; border: 1px solid; background-color: rgb(255, 255, 255);">
+	
+	<input type="hidden" id="idVVgridUrlSimNao">
+	<input type="hidden" id="idVVgridUrlSimSucesso">
+	
+		<table class="grade2" cellpadding="0" cellspacing="0" width="100%" height="100%">
+			<tbody><tr>
+				<td colspan="2" align="center"><br>
+				<b><spam id="VVpopupMsgSimNao">Mensagem Padrão</spam></b><br>
+				<br>
+				</td>
+			</tr>
+			<tr id="linhaVVSimNao">
+				<td align="center"><input type="button" class="botao" onclick="VVpopupFuncaoSim()" value="Sim"></td>
+				<td align="center"><input type="button" class="botao" onclick="VVpopupFuncaoNao();" value="Nao"></td>
+			</tr>
+			
+			<tr id="linhaVVSimNaoOk">
+				<td align="center" colspan="2"><input type="button" class="botao" onclick="popVVsimNao.hide();" value="Ok"><br></td>
+			</tr>
+		</tbody></table>
+	</div></div></div>
+
+	<div id="popupEnvioSmsJSon" style="width: 600px; border: 1px solid; padding: 0px; position: absolute; text-align: center; display: none; left: 528.5px; top: 520px; background-color: rgb(192, 192, 192);"><span class="window-buttons" id="window-buttons16" style="display: block; cursor: move; margin: 0px; position: absolute; left: 0px; text-align: right; line-height: 22px; width: 598px; height: 22px;"><input id="minimize-popupEnvioSmsJSon" alt="" title="" value="_" type="button"><input id="close-popupEnvioSmsJSon" alt="" title="" value="X" type="button"></span><span class="window-header" id="window-header17" style="display: block; margin: 0px; padding: 0px 0px 0px 5px; left: 0px; line-height: 22px; text-align: left; width: 595px; height: 22px; color: navy; font-weight: bold; background-color: rgb(211, 211, 211);">Envio de SMS</span><div><div class="container-window" style="margin: 3px; width: 592px; height: 211px; text-align: left; overflow: auto; border: 1px solid; background-color: rgb(255, 255, 255);">
+		<form id="13">
+			<table class="grade2" cellpadding="0" cellspacing="0" width="100%" style="margin-top: 10px;padding-left: 15px;">
+				<tbody><tr><td><b> ( Não utilizar acentuação  e/ou caracteres especiais no texto da mensagem ) </b></td></tr>
+				<tr><td><b> ( Limite de 140 caracteres. )  </b></td></tr>
+			</tbody></table>
+			<table class="grade2" cellpadding="0" cellspacing="0" width="100%" style="padding: 15px;">
+				<tbody><tr>
+					<td><b>Mensagem</b></td>
+				</tr>
+				<tr>
+					<td colspan="4"><textarea style="width:500px; height:50px;" id="idTextoSms" name="texto" onkeydown="textCounter(this.form.texto,this.form.remLen,140);" onkeyup="textCounter(this.form.texto,this.form.remLen,140);"></textarea></td>
+				</tr>
+				<tr><td align="left"><b>Faltam&nbsp;</b><input readonly="" type="text" name="remLen" size="3" maxlength="3" value="140"><b>Caracteres</b></td>
+					<td align="right"><input type="button" value="Enviar" class="botao" style="width:170px;height: 30px;font-size: 12px;margin-right: 50px;" onclick="enviaSmsGrid(this)" id="idBotaoEnviaSms"></td>
+				</tr>
+			</tbody></table>
+		</form>	
+	</div></div></div>
+
+<script>
+ 	
+	document.getElementById("VVpopupSimNao").style.display = "";
+
+ 	var popVVsimNao = new Popup("VVpopupSimNao",400,130); 
+ 	popVVsimNao.setTitle("Mensagem"); 
+ 	popVVsimNao.init();
+ 	
+ 	document.getElementById("popupEnvioSmsJSon").style.display = "";
+ 	
+	var popEnvioSmsJSon = new Popup("popupEnvioSmsJSon",600,240); 
+	popEnvioSmsJSon.setTitle("Envio de SMS"); 
+	popEnvioSmsJSon.init();
+	
+	function textCounter(field, countfield, maxlimit) {
+		if (field.value.length > maxlimit)
+		field.value = field.value.substring(0, maxlimit);
+		else 
+		countfield.value = maxlimit - field.value.length;
+	}
+ 	
+ </script>
+  	
+
+
+  	
+  	
+  	
+ </body></html>

@@ -1,0 +1,771 @@
+body {
+	font-family: calibri;
+	font-size: 13px;
+}
+
+[autoLayout="true"] {
+opacity: 0.0;
+    filter: alpha(opacity=0);
+	}
+
+
+textarea {
+	background-color: #F2F6F7;
+	font-family: calibri
+}
+
+textarea:focus {
+    background-color: yellow;
+}
+
+fieldset {
+	background-color: #F2F6F7;
+	font-family: calibri
+}
+
+
+
+input {
+	background-color: #F2F6F7;
+	font-family: calibri;
+	-moz-border-radius: 8px; /* Firefox */
+	-webkit-border-radius: 8px; /* Safari, Chrome */
+	-khtml-border-radius: 8px; /* KHTML */
+	border-radius: 8px; /* CSS3 */
+	behavior: url("border-radius.htc");
+}
+
+input[type=text]:focus {
+    background-color: yellow;
+}
+
+select {
+	background-color: #F2F6F7;
+	font-family: calibri
+}
+
+select:focus {
+    background-color: yellow;
+}
+
+bold {
+	font-family: calibri;
+	font-size: 13px;
+}
+
+a {
+	font-family: calibri
+}
+
+input.file_hidden {
+	-moz-opacity: 50;
+	filter: alpha(opacity : 50);
+	opacity: 50;
+	width: 100;
+	height: 10;
+	display: none;
+}
+
+.grade {
+	background-color: #edd8c7;
+}
+
+.add {
+	width: 15px;
+	height: 15px;
+	color: green;
+}
+
+.remove {
+	width: 15px;
+	height: 15px;
+	color: red;
+}
+
+.associa {
+	width: 15px;
+	height: 15px;
+	color: blue;
+}
+
+span#salvandogridbox {
+    position: absolute!important;
+    z-index: 99999!important;
+    width: 780px!important;
+    height: 100%!important;
+    background: white!important;
+    opacity: 0.8!important;
+    top: 0!important;
+    margin-left: -20px!important;
+    padding-top: 500px!important;
+}
+
+.tabelaTopo {
+	border-left-color: #e1e0e0;
+	border-left-style: solid;
+	border-left-width: 3px;
+	border-right-color: #e1e0e0;
+	border-right-style: solid;
+	border-right-width: 3px;
+	border-top-style: solid;
+	border-top-width: 3px;
+	border-top-color: #e1e0e0;
+	border-bottom-style: solid;
+	border-bottom-width: 3px;
+	border-bottom-color: #e1e0e0;
+	font-family: calibri;
+	background-color: white;
+}
+
+.botaonovo {
+	font-size: 20px;
+	/* background-Color: #f3fcfe; */
+	background-color: #F4F4F8;
+/* 	color: #1874CD; */
+	color:#6D6D73;
+	border-top-width: thin;
+	border-top-style: solid;
+	border-top-color: #FFFFFF;
+	border-left-width: thin;
+	border-left-style: solid;
+	border-left-color: #FFFFFF;
+	border-right-width: thin;
+	border-right-style: solid;
+	border-right-color: #333333;
+	border-bottom-style: solid;
+	border-bottom-width: thin;
+	border-bottom-color: #666666;
+	height: 100px;
+	width: 100px;
+	cursor:pointer;
+}
+
+.botaosuas {
+	font-size: 20px;
+	background-Color: #f3fcfe;
+	color: #1874CD;
+	border-top-width: thin;
+	border-top-style: solid;
+	border-top-color: #FFFFFF;
+	border-left-width: thin;
+	border-left-style: solid;
+	border-left-color: #FFFFFF;
+	border-right-width: thin;
+	border-right-style: solid;
+	border-right-color: #333333;
+	border-bottom-style: solid;
+	border-bottom-width: thin;
+	border-bottom-color: #666666;
+	height: 50px;
+	width: 100px;
+}
+
+.add {
+	width: 15px;
+	height: 15px;
+	color: green;
+}
+
+.remove {
+	width: 15px;
+	height: 15px;
+	color: red;
+}
+
+.associa {
+	width: 15px;
+	height: 15px;
+	color: blue;
+}
+
+.botao {
+	background: #fff;
+	/* color: #2E7B96; */
+	color: #5f5f5f;
+	border: 1px solid #5f5f5f;
+	border-radius: 6px;
+	width: 100px !important;
+	height: 27px;
+	padding: 5px;
+	cursor:pointer;
+}
+
+.botaografico {
+	margin-right: 30px;
+	height: 20px;
+	margin: 10px;
+	border-color: #5f5f5f;
+	color: #5f5f5f;
+	font-size: 9pt;
+	padding: 3px;
+	background: #fff;
+	border: 1px solid #5f5f5f;
+	border-radius: 6px;
+	width: 100px !important;
+	padding: 3px;
+	cursor: pointer;
+}
+
+.quadrado{
+	border-color: #F5F5F5;  
+	border-radius: 20px;
+	background-color: #f6f8f9;
+}
+
+.botao[value=Nova] {
+	background: url("../botoes/botao-novo.png") 2px 50% no-repeat;
+	font-size: 0px;
+}
+
+.botao[value=Novo] {
+	background: url("../botoes/botao-novo.png") 2px 50% no-repeat;
+	font-size: 0px;
+}
+.botao[value=SelecionaFunc] {
+	background: url("../botoes/botao-selecionar-funcionario.png") 2px 50% no-repeat;
+	font-size: 0px;
+    width: 189px !important;
+    height: 29px;
+}
+.botao[value=SelecionaSetor] {
+	background: url("../botoes/botao-selecione-setor.png") 2px 50% no-repeat;
+	font-size: 0px;
+    width: 140px !important;
+    height: 25px;
+}
+
+.botao[value=Salva] {
+	background: url("../botoes/botao-salvar.png") 2px 50% no-repeat;
+	font-size: 0px;
+}
+
+.botao[value=Descarta] {
+	background: url("../botoes/botao-descarta.png") 2px 50% no-repeat;
+	font-size: 0px;
+}
+
+.botao[value=EnviarSMS] {
+	background: url("../botoes/botao-enviarSMS.png") 2px 50% no-repeat;
+	font-size: 0px;
+}
+
+.botao[value=EnviarRelatorio] {
+	background: url("../botoes/botao-salvar-em-pdf.png") 2px 50% no-repeat;
+	font-size: 0px;
+	width: 140px !important;
+}
+
+.botao[value=Apaga] {
+	background: url("../botoes/botao-apagar.png") 2px 50% no-repeat;
+	font-size: 0px;
+}
+
+.botao[value=Pesquisar] {
+	background: url("../botoes/botao-pesquisar.png") 2px 50% no-repeat;
+	font-size: 0px;
+}
+
+.botao[value=Apaga] {
+	background: url("../botoes/botao-apagar.png") 2px 50% no-repeat;
+	font-size: 0px;
+}
+
+.botao[value='Enviar'] {
+	background: url("../botoes/botao-enviar.png") 2px 50% no-repeat;
+	font-size: 0px;
+}
+/*  .botao[value*='Gerar Rela'] {
+  background: url("../botoes/botao-relatorio.png") 2px 50% no-repeat;
+  font-size: 0px;
+}  */
+
+
+
+/*
+.botao[value='Relatorio Domicilio'] {
+  background: url("../botoes/botao-rel-domiciliar.png") 2px 50% no-repeat;
+  font-size: 0px;
+} 
+*/
+
+.botao[value=Fecha] {
+	background: url("../botoes/botao-fechar.png") 2px 50% no-repeat;
+	font-size: 0px;
+}
+
+.botao[value="   ...   "] {
+	background: url("../botoes/lupa.png") 0px 50% no-repeat;
+	font-size: 0px;
+	width: 25px !important;
+	border:none;
+}
+
+.botao[value='Enviar Mensagem'] {
+	background: url("../botoes/botao-enviarmsg.png") 2px 50% no-repeat;
+	font-size: 0px;
+}
+
+.botao[value='Voltar'] {
+	background: url("../botoes/botao-voltar.png") 2px 50% no-repeat;
+	font-size: 0px;
+}
+
+.botao[value='Gera Excel'] {
+	background: url("../botoes/botao-gerarexcel.png") 2px 50% no-repeat;
+	font-size: 0px;
+	width: 110px !important;
+}
+.botao[value='Seleciona Unidade Superior'] {
+	background: url("../botoes/botao-unidade-superior.png") 2px 50% no-repeat;
+	font-size: 0px;
+	width: 210px !important;
+}
+
+.botao[value='Veiculos Clandestinos'] {
+	background: url("../botoes/botao-veiculo-clandestino.png") 2px 50% no-repeat;
+	font-size: 0px;
+	width: 175px !important;
+}
+
+.botao[value='Novo Proprietario'] {
+	background: url("../botoes/botao-novo-proprietario.png") 2px 50% no-repeat;
+	font-size: 0px;
+	width: 170px !important;
+}
+
+/* ########################  */
+/* vv - new buttons - fevereiro */
+/* #####################  */
+#assist1 h3 {padding-top: 3px; font-weight: normal}
+#assist1 h3 a:link, a:visited {color:#8e8b8b !important; font-weight: normal}
+#assist1 h3 a:hover {color:#5f5f5f !important} 
+#assist1 h3 font {color:#5f5f5f !important}
+#assist1 h4 {padding-top: 3px; font-weight: normal}
+#assist1 h4 a:link, a:visited {color:#8e8b8b !important; font-weight: normal}
+#assist1 h4 a:hover {color:#5f5f5f !important} 
+#assist1 h4 font {color:#5f5f5f !important}
+
+
+.botao[value='Cadastrar Novo Certificado'] {
+	background: url("../botoes/botao-novo-certificado.png") 2px 50% no-repeat;
+	font-size: 0px;
+}
+
+.botao[value='Salvar Novo Certificado'] {
+	background: url("../botoes/botao-salvar-certificado.png") 2px 50% no-repeat;
+	font-size: 0px;
+}
+
+.botao[value='Selecionar Aluno'] {
+	background: url("../botoes/botao-selecionar-aluno.png") 2px 50% no-repeat;
+	font-size: 0px;
+}
+
+.botao[value='Selecionar Responsavel'] {
+	background: url("../botoes/botao-selecionar-responsavel.png") 2px 50% no-repeat;
+	font-size: 0px;
+	width: 195px !important;
+}
+
+.botao[value='Selecionar Entidade'] {
+	background: url("../botoes/botao-selecionar-entidade.png") 2px 50% no-repeat;
+	font-size: 0px;
+	width: 165px !important;
+}
+
+.botao[value='Pre-Inscricao'] {
+	background: url("../botoes/botao-pre-inscricao.png") 2px 50% no-repeat;
+	font-size: 0px;
+}
+
+
+
+.botao[value='Selecionar Procedimento'] {
+	background: url("../botoes/botao-selec-proc.png") 2px 50% no-repeat;
+	font-size: 0px;
+}
+
+.botao[value='Selecionar Foto'] {
+	background: url("../botoes/botao-selecionar-foto.png") 2px 50% no-repeat;
+	font-size: 0px;
+}
+
+.botao[value='Trocar Assinatura'] {
+	background: url("../botoes/botao-trocar-assinatura.png") 2px 50% no-repeat;
+	font-size: 0px;
+}
+
+.botao[value='Trocar Digital'] {
+	background: url("../botoes/botao-trocar-digital.png") 2px 50% no-repeat;
+	font-size: 0px;
+}
+
+.botao[value='Gerar Prontuario'] {
+	background: url("../botoes/botao-gerar-prontuario.png") 2px 50%
+		no-repeat;
+	font-size: 0px;
+}
+
+.botao[value='Ficha em Lote'] {
+	background: url("../botoes/botao-ficha-em-lote.png") 2px 50%
+		no-repeat;
+	font-size: 0px;
+}
+
+.botao[value*='Gerar Rela'] {
+  background: url("../botoes/botao-relatorio.png") 2px 50% no-repeat;
+  font-size: 0px;
+} 
+
+.botao[value='Gerar Relatorio Ida'] {
+	background: url("../botoes/botao-gerar-rel-ida.png") 2px 50% no-repeat;
+	font-size: 0px;
+}
+
+.botao[value='Gerar Relatorio Volta'] {
+	background: url("../botoes/botao-gerar-rel-volta.png") 2px 50% no-repeat;
+	font-size: 0px;
+}
+
+.botao[value='Relatorio Domicilio'] {
+  background: url("../botoes/botao-rel-domicilio.png") 2px 50% no-repeat;
+  font-size: 0px;
+} 
+
+.botao[value='Salvar Relatorio'] {
+  background: url("../botoes/botao-salvar-relatorio.png") 2px 50% no-repeat;
+  font-size: 0px;
+} 
+
+.botao[value='Salvar Relatorio'] {
+  background: url("../botoes/botao-salvar-relatorio.png") 2px 50% no-repeat;
+  font-size: 0px;
+} 
+
+.botao[value='Relatorio de Pessoas'] {
+  background: url("../botoes/botao-rel-pessoas.png") 2px 50% no-repeat;
+  font-size: 0px;
+} 
+
+.botao[value='Selecionar do Cad. Unico'] {
+  background: url("../botoes/botao-sel-cadunico.png") 2px 50% no-repeat;
+  font-size: 0px;
+} 
+
+
+.botao[value*='Gerar Comprovante'] {
+	background: url("../botoes/botao-gerar-comp.png") 2px 50% no-repeat;
+	font-size: 0px;
+}
+/*
+.botao[value='Gerar Comprovantes'] {
+	background: url("../botoes/botao-gerar-comprovantes.png") 2px 50% no-repeat;
+	font-size: 0px;
+}
+*/
+
+
+.botao[value='Selecionar Pessoa'] {
+	background: url("../botoes/botao-selec-pessoa.png") 2px 50% no-repeat;
+	font-size: 0px;
+}
+
+.botao[value='Selecionar Pessoas do Domicilio'] {
+	background: url("../botoes/botao-selec-pessoas-domicilio.png") 2px 50%
+		no-repeat;
+	font-size: 0px;
+}
+
+.botao[value='Selecionar Acompanhante'] {
+	background: url("../botoes/botao-selec-acomp.png") 2px 50% no-repeat;
+	font-size: 0px;
+}
+
+.botao[value='Novo a partir desse'] {
+	background: url("../botoes/botao-novo-a-partir-desse.png") 2px 50%
+		no-repeat;
+	font-size: 0px;
+}
+
+.botao[value='Ficha'] {
+	background: url("../botoes/botao-ficha.png") 2px 50% no-repeat;
+	font-size: 0px;
+}
+
+.botao[value='Consultar Cad. Unico'] {
+	background: url("../botoes/botao-consultar-cadastro-unico.png") 2px 50%
+		no-repeat;
+	font-size: 0px;
+}
+
+.botao[value='Relatorio'] {
+	background: url("../botoes/botao-relatorio.png") 2px 50% no-repeat;
+	font-size: 0px;
+}
+
+.botao[value='Adicionar Outro'] {
+	background: url("../botoes/botao-adicionar-outro.png") 2px 50% no-repeat;
+	font-size: 0px;
+}
+
+.botao[value='Baixar Foto'] {
+	background: url("../botoes/botao-baixar-foto.png") 2px 50% no-repeat;
+	font-size: 0px;
+}
+
+.botao[value='Trocar Foto'] {
+	background: url("../botoes/botao-trocar-foto.png") 2px 50% no-repeat;
+	font-size: 0px;
+}
+
+.botao[value='Relatorio PDF'] {
+	background: url("../botoes/botao-relatorio-pdf.png") 2px 50% no-repeat;
+	font-size: 0px;
+}
+.botao[value='Adicionar'] {
+	background: url("../botoes/botao-adicionar.png") 2px 50% no-repeat;
+	font-size: 0px;
+}
+.botao[value='Gerar XML'] {
+	background: url("../botoes/botao-gerar-xml.png") 2px 50% no-repeat;
+	font-size: 0px;
+}
+.botao[value='Selecionar Participante'] {
+	background: url("../botoes/botao-selecionar-participante.png") 2px 50% no-repeat;
+	font-size: 0px;
+}
+.botao[value='Selecionar Beneficiario'] {
+	background: url("../botoes/botao-selecionar-beneficiario.png") 2px 50% no-repeat;
+	font-size: 0px;
+}
+.botao[value='Ficha de Cadastro'] {
+	background: url("../botoes/botao-ficha-de-cadastro.png") 2px 50% no-repeat;
+	font-size: 0px;
+}
+
+.botao[value='Aprovar'] {
+	background: url("../botoes/botao-aprovar.png") 2px 50% no-repeat;
+	font-size: 0px;
+}
+.botao[value='Reprovar'] {
+	background: url("../botoes/botao-reprovar.png") 2px 50% no-repeat;
+	font-size: 0px;
+}
+.botao[value='Sim'] {
+	background: url("../botoes/botao-sim.png") 2px 50% no-repeat;
+	font-size: 0px;
+}
+.botao[value='Nao'] {
+	background: url("../botoes/botao-nao.png") 2px 50% no-repeat;
+	font-size: 0px;
+}
+.botao[value='Confirmar'] {
+	background: url("../botoes/botao-confirmar.png") 2px 50% no-repeat;
+	font-size: 0px;
+}
+.botao[value='Fechar'] {
+	background: url("../botoes/botao-fechar.png") 2px 50% no-repeat;
+	font-size: 0px;
+}
+.botao[value='Parecer de Desistencia'] {
+	background: url("../botoes/botao-parecer-desistencia.png") 2px 50% no-repeat;
+	font-size: 0px;
+}
+.botao[value='Declaracao para Bolsa Familia'] {
+	background: url("../botoes/botao-declaracao-bolsa-familia.png") 2px 50% no-repeat;
+	font-size: 0px;
+}
+
+.botao[value='Assinar'] {
+	background: url("../botoes/botao-assinar.png") 2px 50% no-repeat;
+	font-size: 0px;
+}
+
+.botao[value='Remover Acompanhante'] {
+	background: url("../botoes/botao-remover-acompanhante.png") 2px 50% no-repeat;
+	font-size: 0px;
+	width: 200px !important;
+}
+
+.botao[value='Importar'] {
+	background: url("../botoes/botao-importar.png") 2px 50% no-repeat;
+	font-size: 0px;
+	width: 100px !important;
+}
+
+/* ###############################  */
+
+
+.linha {
+	border-bottom-style: solid;
+	border-bottom-width: thin;
+	border-bottom-color: #B5CED9;
+}
+
+.cabecalho {
+	height: 25px;
+	background-Color: #dad8d8;
+	padding-left: 15px;
+	font-weight: bold;
+	font-family: calibri;
+	padding-top: 5px;
+}
+
+.grade2 {
+	border-left-color: #E0E8EC;
+	border-left-style: groove;
+	border-left-width: 1px;
+	border-right-color: #E0E8EC;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-top-color: #E0E8EC;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #E0E8EC;
+	font-family: calibri;
+	background-color: white;
+	opacity: 0.95;
+	filter: alpha(opacity = 95)
+}
+
+.grade3 {
+	border-right-color: #E0E8EC;
+	border-right-style: solid;
+	border-right-width: 1px;
+}
+
+div#tipDiv {
+	position: absolute;
+	visibility: hidden;
+	left: 0;
+	top: 0;
+	z-index: 10000;
+	background-color: #dee7f7;
+	border: 1px solid #336;
+	width: 120px;
+	padding: 4px;
+	color: #000;
+	font-size: 11px;
+	line-height: 1.2;
+}
+
+a:link {
+	COLOR: #1c4072;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a:visited {
+	COLOR: #1c4072;
+}
+
+a:hover {
+	COLOR: #4376bd;
+}
+
+a:active {
+	COLOR: #1c4072;
+}
+
+.assistSocial , .iconModulo {
+    filter: gray;
+    -webkit-filter: grayscale(100%);
+}
+.colunaRelatorio {    width: 186px;    float: left;}
+
+
+
+.colunaLayout.barra { width: 99%; float: left; vertical-align: middle; right: 0px ; 
+	border-left-color: #E0E8EC;
+	border-left-style: groove;
+	border-left-width: 1px;
+	border-right-color: #E0E8EC;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-top-color: #E0E8EC;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #E0E8EC;
+	font-family: calibri;
+}
+
+fieldset {
+	
+	-moz-border-radius: 8px; /* Firefox */
+	-webkit-border-radius: 4px; /* Safari, Chrome */
+	-khtml-border-radius: 4px; /* KHTML */
+	border-radius: 4px; /* CSS3 */
+	background: white;
+	
+	border-left-style: solid;
+	border-left-width: 1px;
+	
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-top-style: solid;
+	border-top-width: 1px;
+	
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	
+	font-family: calibri;
+	
+	}
+legend{color: #666;font-weight: bold;}
+
+.colunaLayout.vazia { width: 99%; float: left; vertical-align: middle; right: 0px;height: 5px; padding-top: 5px;}
+
+.colunaLayout.g { width: 99%; float: left; vertical-align: middle; right: 0px;height: 25px; padding-top: 5px;}
+
+.colunaLayout.m { width: 66%;  height: 25px; float: left; vertical-align: middle; right: 0px; padding-top: 5px;}
+
+.colunaLayout.p { width: 33%;  height: 25px; float: left; vertical-align: middle; right: 0px; padding-top: 5px;}
+
+
+
+
+.labelLayout {  float: left; vertical-align: bottom; right: 0px ; font: bold; padding-right: 10px; font-weight: bold;}
+
+
+.botaoPP {
+	background: #fff;
+	/* color: #2E7B96; */
+	color: #5f5f5f;
+	border: 0px solid #5f5f5f;
+	border-radius: 6px;
+	width: 25px !important;
+	height: 25px;
+	padding: 5px;
+	cursor:pointer;
+	background: url("../botoes/lupa.png") 2px 50% no-repeat;
+}
+
+.botaoFoto {
+	background: #fff;
+	/* color: #2E7B96; */
+	color: #5f5f5f;
+	border: 0px solid #5f5f5f;
+	border-radius: 6px;
+	width: 35px !important;
+	height: 25px;
+	padding: 5px;
+	cursor:pointer;
+	background: url("../botoes/foto.png") 2px 50% no-repeat;
+}
+
+#gerandoRelatorio{
+	position: absolute;
+    top: 0;
+    margin-left: -19px;
+    width: 786px;
+    background: white;
+    opacity: 0.8;
+    height: 1000px;
+    z-index: 999;
+    padding-top: 420px;
+    text-align: center;
+}
